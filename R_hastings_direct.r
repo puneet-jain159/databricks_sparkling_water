@@ -4,11 +4,19 @@
 
 # COMMAND ----------
 
+# MAGIC %python
+# MAGIC spark.conf.get("spark.databricks.clusterUsageTags.sparkVersion")
+
+# COMMAND ----------
+
 # MAGIC %md
 # MAGIC ## Pre-requisite
-# MAGIC we need to install the correct sparkling_water jar using maven before initiating an H2o cluster.
-# MAGIC Here is the link to download the JAR https://h2o.ai/resources/download/
-# MAGIC Selecting the correct spark version and clicking the Maven central tab gives the coordinates that need to be added
+# MAGIC we need to install the correct sparkling_water jar using maven before initiating an H2o cluster. </br>
+# MAGIC Here is the link to download the JAR https://h2o.ai/resources/download/ </br>
+# MAGIC Selecting the correct spark version and clicking the Maven central tab gives the coordinates that need to be added in the cluster settings tab </br>
+# MAGIC <img src="https://github.com/puneet-jain159/databricks_sparkling_water/blob/main/images/sparkling_water.png?raw=true" width="640"/> </br>
+# MAGIC Add the cordinates and install the JAR for initiating the cluster
+# MAGIC <img src="https://github.com/puneet-jain159/databricks_sparkling_water/blob/main/images/maven.png?raw=true" width="640"/> </br>
 
 # COMMAND ----------
 
@@ -60,6 +68,10 @@ hc <- H2OContext.getOrCreate(h2oConf)
 df <- createDataFrame (
 list(list(1L, 1, "1", 0.1), list(1L, 2, "1", 0.2), list(3L, 3, "3", 0.3)),
   c("a", "b", "c", "d"))
+
+# COMMAND ----------
+
+display(df)
 
 # COMMAND ----------
 
