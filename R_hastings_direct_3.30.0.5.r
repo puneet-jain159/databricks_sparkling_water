@@ -32,7 +32,11 @@
 # MAGIC 
 # MAGIC 1. rlang </br>
 # MAGIC 2. cli</br>
-# MAGIC 3. Rcurl</br>
+# MAGIC 3. Rcurl</br></br>
+# MAGIC <img src="https://github.com/puneet-jain159/databricks_sparkling_water/blob/main/images/cran.png?raw=true" width="420"/> </br>
+# MAGIC 
+# MAGIC 
+# MAGIC <img src="https://github.com/puneet-jain159/databricks_sparkling_water/blob/main/images/R_package_list.png?raw=true" width="640"/> </br>
 
 # COMMAND ----------
 
