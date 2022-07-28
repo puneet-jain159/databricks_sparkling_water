@@ -53,10 +53,10 @@ install.packages("sparklyr")
 # COMMAND ----------
 
 #Install H2O 3.36.1.1 (zumbo)
-install.packages("h2o", type = "source", repos = "https://h2o-release.s3.amazonaws.com/h2o/rel-zahradnik/5/R")
+install.packages("h2o", type = "source", repos = "https://h2o-release.s3.amazonaws.com/h2o/rel-zahradnik/4/R")
 
 # Install RSparkling 3.36.1.1-1-3.2
-install.packages("rsparkling", type = "source", repos = "http://h2o-release.s3.amazonaws.com/sparkling-water/spark-3.0/3.30.0.5-1-3.0/R")
+install.packages("rsparkling", type = "source", repos = "http://h2o-release.s3.amazonaws.com/sparkling-water/spark-2.4/3.30.0.4-1-2.4/R")
 
 # COMMAND ----------
 
